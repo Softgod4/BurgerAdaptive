@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header_circle {
+    width: 100%;
+    height: 75vh; /* можно изменить на желаемую высоту */
+    background: #ffab08;
+    border-bottom-left-radius: 55% 35%; /* задает полукруглую форму с левой стороны */
+    border-bottom-right-radius: 55% 35%; /* задает полукруглую форму с правой стороны */
+}
+.header_logo h2 {
+    margin-top: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header_logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 2vh;
+}
+.header_burger h1 { 
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.header_burger h1 b {
+    color: #ff5c00;
+}
+.header_burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_burger h1 {
+    margin-left: 37.86px;
+    animation: burgerh1 ease-in 1.3s;
+}
+@keyframes burgerh1 {
+    from {
+        margin-left: 300px;
+    }
+    to {
+        margin-left: 37.86px;
+    }
+}
+.header_burger img {
+    top: 90px;
+    position: relative;
+    width: 19%;
+}
+
+.select_item p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.select_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    width: 126px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.select_item:hover {
+    background: #FFAB08;
+    transform: scale(1.2);
+}
+.select_item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.item_selecter {
+    margin-top: 7vh;
+    display: flex;
+}
+.select_item:not(:first-child) {
+    margin-left: auto
+}
+
+@media screen and (max-width: 1500px) {
+    .header_circle {
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 920px) {
+    .header_burger {
+        display: inline;
+    }
+    .header_burger img {
+        width: 50%;
+        top: 0;
+        margin: 0 auto;
+        transform: translateX(50%);
+    }
+    .header_burger h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .header_circle {
+        height: 80vh;
+    }
+}
