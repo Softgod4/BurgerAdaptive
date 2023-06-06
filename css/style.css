@@ -70,7 +70,6 @@ body {
     position: relative;
     width: 19%;
 }
-
 .select_item p {
     font-family: 'Nunito';
     font-style: normal;
@@ -90,7 +89,6 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 .select_item:hover {
     background: #FFAB08;
     transform: scale(1.2);
@@ -100,6 +98,7 @@ body {
     height: 24px;
     margin-right: 8px;
 }
+
 .item_selecter {
     margin-top: 7vh;
     display: flex;
@@ -119,21 +118,84 @@ body {
     margin-left: 2vh;
 }
 
+.menu_container {
+    margin-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-#burgers_text {
+.menu_select {
+    width: 300px;
+    height: 411px;
+    background: #FFFFFF;
+    border-radius: 18px;
+}
+.menu_select:not(:first-child) {
+     margin-left: 7vh;
+}
+#select_product {
+    margin-top: 12vh;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-    line-height: 120%;
+    color: #000000;
+    text-align: center;
+}
+.menu_select img {
+    padding: 12px;
+}
+.menu_select p { 
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    padding-left: 12px;
 
     color: #000000;
 }
+.menu_select h4 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    padding-left: 12px;
+}
+.menu_select h5 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    padding-left: 12px;
+    margin-top: 45px;
 
+    color: #B1B1B1;
+}
+.menu_select button {
+    height: 40px;
+    left: 12px;
+    top: 359px;
 
+    background: #F2F2F3;
+    border-radius: 12px;
+    width: 276px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 6px;
+    margin-top: 5px;
+    cursor: pointer;
+}
 @media screen and (max-width: 1500px) {
     .header_circle {
         height: 60vh;
+    }
+    .menu_select img {
+        width: 90%;
+        height: auto;
     }
 }
 @media screen and (max-width: 920px) {
@@ -144,6 +206,9 @@ body {
     .header_burger {
         display: inline;
     }
+    .menu_select:not(:first-child) {
+        margin-left: 0vh;
+   }
     .header_burger img {
         width: 50%;
         top: 0;
@@ -157,10 +222,15 @@ body {
     .header_circle {
         height: 80vh;
     }
-}
-.bascket {
-    width: 300px;
-    height: 467px;
-    background-color: #FFFFFF;
-    border-radius: 18px;
+    .menu_container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_select {
+        width: auto;
+    }
+    .menu_select:not(:first-child) {
+        margin-top: 7vh;
+    }
 }
