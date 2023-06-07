@@ -189,6 +189,82 @@ body {
     margin-top: 5px;
     cursor: pointer;
 }
+.footer {
+    margin-top: 25vh;
+    background: #FFFFFF;
+    width: 100%;
+    height: 244px;
+}
+.logo_footer {
+    position: relative;
+    display: flex;
+    width: 400px;
+    margin-left: 75px;
+    top: 61.74px;
+}
+.logo_footer h2 {
+    color: #FF7020;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 180%;
+    text-align: center;
+}
+.logo_footer img {
+    left: 4vh;
+}
+.phone_footer {
+    margin-left: 110vh;
+    width: 300px;
+}
+.phone_footer h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+
+    color: #000000;
+}
+.phonenum_footer {
+    margin-top: 25.5px;
+    display: flex;
+    margin-left: 15px;
+}
+.phonenum_footer a {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+    cursor: pointer;
+}
+.socialnet_footer {
+    position: relative;
+    margin-left: 150vh;
+    bottom: 9.7vh;
+}
+.socialnet_footer h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000000;
+}
+.socialicon_footer {
+    margin-top: 4vh;
+    display: flex;
+}
+.socialicon_footer img:not(:first-child) {
+    margin-left: 2vh;
+}
+.socialicon_footer img {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1500px) {
     .header_circle {
         height: 60vh;
@@ -196,6 +272,10 @@ body {
     .menu_select img {
         width: 90%;
         height: auto;
+    }
+    .phone_footer {
+        margin-left: 9vh;
+        margin-top: 7vh;
     }
 }
 @media screen and (max-width: 920px) {
